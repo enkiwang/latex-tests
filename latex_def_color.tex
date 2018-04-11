@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{color}   % package needed
+\usepackage{amsmath} % package needed
+
+\def\myHearts{\color{red}{$\heartsuit$}\kern-2.5pt\color{green}{$\heartsuit$}}
+%\def\myHearts{\color{red}{$\heartsuit$}\kern-2.5pt\color{green}{$\heartsuit$}}
+% undefined color 'purple', and $\heartsuit$, $.$ is also needed
+% \kern negative: allows overlapping 
+
+\def\fourNumber#1 #2 #3 #4{\textbf{#1}\textit{#2}\textsc{#3}\textsl{#4}}
+
+\begin{document}
+
+% repeating two hearts
+\myHearts\myHearts
+
+\myHearts\myHearts\myHearts\myHearts
+
+
+\color{blue}	
+\huge{ \fourNumber This is for def, normal texts are from here: 
+	\color{red} Hello LaTeX! }
+
+% \huge{} set font size
+%\Huge
+%\huge
+%\LARGE
+%\Large
+%\large
+%\normalsize (default)
+%\small
+%\footnotesize
+%\scriptsize
+%\tiny
+\end{document}
